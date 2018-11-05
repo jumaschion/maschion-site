@@ -11,8 +11,28 @@
 </head>
 
 <body>
-    <nav class="topbar">
+    <!-- MENU HAMBURGUER -->
+    <div id="topNav" class="navigation">
+        <span id="closebtn" onclick="navToggle()">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </span>
+     
+        <ul class="menulist">
+            <li><a class="menuitems" href="#">Início</a></li>
+            <li><a class="menuitems" href="#">Sob Medida</a></li>
+            <li><a class="menuitems" href="#">Aprenda a tirar suas medidas</a></li>
+            <li><a class="menuitems" href="#">Vale Presente</a></li>
+            <li><a class="menuitems" href="#">Contato</a></li>
+        </ul>
+    </div>
 
+    <div id="main">
+    </div>
+    <!-- FIM DO MENU HAMBURGUER -->
+
+    <nav class="topbar">
         <div class="topbar__menu">
 
             <ul class="topbar__menu-itens">
@@ -46,7 +66,7 @@
                 <a class="topbar__logobranco" href="#">
                     <img class="logo" src="img/logo.png">
                 </a>
-                <h1 class="titulo"> Bem-Vindo a Maschion Camisaria </h1>
+                <h1 class="titulo"> Bem-Vindo a camisaria Maschion </h1>
             </div>
 
             <p class="subtitulo"> Fundada em 2001, confeccionamos camisas masculinas e femininas sob medida.
@@ -63,3 +83,5 @@
         </div>
 
     </header>
+    <script src="script/script.js"></script> 
+    </body>

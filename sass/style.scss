@@ -5,13 +5,14 @@
     margin: 0;
     padding: 0;
     font-size: 10px;
-    font-family: 'Asap', Arial;
+    font-family: 'Cinzel', serif;
 
 }
 
 .container {
     margin-left: 50px;
     margin-right: 50px;
+
 }
 
 
@@ -31,7 +32,6 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     color: inherit;
-    font-family: 'Asap';
     font-size: 1.7rem;
     padding: 25px;
     color: rgba(180, 172, 172, 0.829);
@@ -47,10 +47,12 @@ a:hover {
 }
 
 .topbar {
+    display: none;
     position: absolute;
     top: 0;
-    width: 99%;
+    width: 100%;
     z-index: 99;
+    display: none;
 }
 
 .topbar__menu {
@@ -66,35 +68,136 @@ a:hover {
     margin: 50px;
 }
 
+/* MENU HAMBURGUER*/
 
-.topbar__menu-item-hamburguer {
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
+.navigation {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #353541;
+    box-shadow: 0 4px 4px -3px #232323;
+    -moz-box-shadow: 0 4px 4px -3px #232323;
+    -webkit-box-shadow: 0 4px 4px -3px #232323;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-top: 0px;
 }
 
-.topbar__manu-hamburguer {
-    display: flex;
-    list-style: none;
+.navigation a {
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
 }
 
-.hamburguer {
-    width: 35px;
-    display: none;
-
+.navigation ul {
+    margin-top:30px;
+    text-align:center;
+    list-style:none; 
+    margin-left:auto;
+    margin-right:auto;
 }
+
+.menulist {
+    width:200px;
+}
+
+.line1, .line2, .line3 {
+  margin-top:5px;
+  background-color:#fff;
+  width:25px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity:0.0;
+  background-color:rgba(126, 122, 88, 0.397);
+  top:5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color:rgba(126, 122, 88, 0.397);
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color:rgba(126, 122, 88, 0.397);
+  top:-7px;
+}
+
+.menuitems {
+    padding-top:12px;
+    padding-bottom:12px;
+    text-decoration: none;
+    list-style:none; 
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    display: inline-block;
+    position:relative;	
+    text-align:center;
+    color: #fff;
+    opacity:0.0;
+    transition: all .5s ease-in-out;
+}
+
+.menuitems:after {
+  content:'';
+  display:block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .2s;
+}
+
+.menuitems:hover::after {
+    width:100%;
+}
+
+#closebtn {
+    height:25px;
+    width:25px;	
+    position: absolute;
+    text-decoration:none;
+    top: 10px;
+    left: 25px;
+    font-size: 36px !important;
+    margin-right: 50px;
+    z-index:100;
+    color:#fff;
+    cursor:pointer;
+    trainsition:background-position .3s;
+}
+
+#main {	
+    transition: margin-top .4s;
+    text-align:center;
+    margin:auto;
+    padding: 16px;
+    font-size:30px;
+}
+
 
 /*HEADER*/
 
 
 .logo {
-    width: 55%;
+    width: 60%;
 }
 
 .background {
     background-image: url(../img/maquina-costura.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -106,17 +209,14 @@ a:hover {
     color: #b1b1b1;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    
-    margin-top: 80px;
-    font-family: 'Asap','Flamenco', Arial;
+    margin-top: 150px;
+    // background-color: #0808088c;
     font-weight: lighter;
 }
 
 .titulo {
-    margin-top: 25px;
-    font-size: 4rem;
-    font-family: 'Flamenco', cursive;
+    font-size: 1.8rem;
+    font-family: 'Cinzel', serif;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -128,8 +228,7 @@ a:hover {
 }
 
 .subtitulo {
-    width: 50%;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .caixa-btn-header {
