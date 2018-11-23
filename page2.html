@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- MENU HAMBURGUER -->
+    <div id="topNav" class="navigation">
+        <span id="closebtn" onclick="navToggle()">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </span>
+
+        <ul class="menulist">
+            <li><a class="menuitems" href="#">Início</a></li>
+            <li><a class="menuitems" href="#">Sob Medida</a></li>
+            <li><a class="menuitems" href="#">Aprenda a tirar suas medidas</a></li>
+            <li><a class="menuitems" href="#">Vale Presente</a></li>
+            <li><a class="menuitems" href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+    </div>
+    <!-- FIM DO MENU HAMBURGUER -->
+
+    <nav class="topbar">
+        <div class="topbar__menu">
+
+            <ul class="topbar__menu-itens">
+                <li class="topbar__menu-item">
+                    <a class="topbar__menu-link" href="#"> Início </a>
+                </li>
+                <li class="topbar__menu-item">
+                    <a class="topbar__menu-link" href="#"> Sob Medida </a>
+                </li>
+                <li class="topbar__menu-item">
+                    <a class="topbar__menu-link" href="#"> Aprenda a tirar suas medidas </a>
+                </li>
+                <li class="topbar__menu-item">
+                    <a class="topbar__menu-link" href="#"> Vale Presente </a>
+                </li>
+                <li class="topbar__menu-item">
+                    <a class="topbar__menu-link" href="#"> Contato </a>
+                </li>
+                <li class="topbar__menu-item-hamburguer">
+                    <a class="topbar__menu-hamburguer" href="#">
+                        <img class="hamburguer" src="img/hamburguer.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <header class="background-page2">
+            <div class="caixa-titulo">
+                <h1 class="titulo-page2"> Crie sua camisa </h1>
+            </div>
+    </header>
+
+    <section class="form-camisas">
+
+        <div class="container">
+            <form action="/pagina-processa-dados-do-form" method="post">
+
+
+                <div class="camisa">
+                    <div class="titulo-camisa">
+                        <h1>1. ESTILO DA CAMISA</h1>
+                    </div>
+                    <div class="camisa">
+                        <label>
+                            <img src="./img/camisa-medidas.png" alt="Camisa e quadro de medidas">
+                        </label>
+                    </div>
+                    <input type="checkbox" name="checkbox" disabled>
+                    <span>Camisa Slim</span>
+
+                    <div class="camisa">
+                        <label>
+                            <img src="./img/camisa-medidas.png" alt="Camisa e quadro de medidas">
+                        </label>
+                    </div>
+                    <input type="checkbox" name="checkbox" disabled>
+                    <span>Camisa Slim</span>
+                </div>
+
+                </label>
+                <div class="form-camisa-titulo">
+                    <h1>2. COLARINHOS</h1>
+                </div>
+                <div class="colarinhos">
+                    <label>
+                        <div class="colarinho-classico">
+                            <img class="colarinho1" src="./img/colarinho-classico.png" alt="Imagem de colarinho de camisa modelo clássico">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>COLARINHO</span>
+                    </label>
+
+                    <label>
+                        <div class="colarinho-ingles-classico">
+                            <img class="colarinho2" src="./img/colarinho-ingles-classico.png" alt="Imagem de colarinho de camisa modelo inglês clássico">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>COLARINHO</span>
+                    </label>
+                    <label>
+                        <div class="colarinho-semi-italiano">
+                            <img class="colarinho3" src="./img/colarinho-semi-taliano.png" alt="Imagem de colarinho de camisa modelo semi-italiano">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>COLARINHO</span>
+                    </label>
+                </div>
+
+                <div class="form-camisa-titulo">
+                    <h1>3. PUNHOS</h1>
+                </div>
+                <div class="punhos">
+                    <label>
+                        <div class="punho-chanfrado">
+                            <img class="punho1" src="./img/punho-chanfrado-simples.png" alt="Imagem de punho de camisa chanfrado">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>punho</span>
+                    </label>
+
+                    <label>
+                        <div class="punho-duplo">
+                            <img class="punho2" src="./img/punho-duplo.png" alt="Imagem de punho de camisa duplo">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>punho</span>
+                    </label>
+                    <label>
+                        <div class="punho-simples-redondo">
+                            <img class="punho3" src="./img/punho-simples-redondo.png" alt="Imagem de punho de camisa simples redondo">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>punho</span>
+                    </label>
+                </div>
+
+                <div class="form-camisa-titulo">
+                    <h1>4. VISTA</h1>
+                </div>
+                <div class="vista">
+                    <label>
+                        <div class="vista-aviador">
+                            <img class="vista1" src="./img/vista-aviador.png" alt="Imagem de vista de camisa modelo vista-aviador">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>Vista</span>
+                    </label>
+
+                    <label>
+                        <div class="vista-coberta">
+                            <img class="vista2" src="./img/vista-coberta.png" alt="Imagem de vista de camisa modelo vista coberta">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>Vista</span>
+                    </label>
+                    <label>
+                        <div class="vista-lisa">
+                            <img class="vista3" src="./img/vista-lisa.png" alt="Imagem de vista de camisa modelo vista lisa">
+                        </div>
+                        <input type="checkbox" name="checkbox" disabled>
+                        <span>Vista</span>
+                    </label>
+                </div>
+            </form>
+            <div class="camisa">
+                <h1 class="titulo-camisa">SUA CAMISA</h1>
+                <img src="./img/camisas-manequim.png" alt="camisa">
+            </div>
+        </div>
+    </section>
+
+    <article class="formulario-contato">
+
+        <h2 class="formulario-titulo"></h2>
+        <div class="form">
+            <form action="Obrigada!">
+
+                <div class="form-nome">
+                    <label class="text-form" for="name">Nome</label>
+                    <input class="form-bg" type="text" name="name">
+
+                    <label class="text-form" for="email">Email</label>
+                    <input class="form-bg" type="text" name="email">
+
+
+                    <label class="text-form" for="tel">Telefone</label>
+                    <input class="form-bg" type="tel" name="tel">
+                </div>
+
+                <div class="input-group">
+                        <label class="text-form" for="cep">CEP</label>
+                        <input class="form-bg" name="cep" id="cep" type="number" />
+                        <p id="cep-error">Este CEP é inválido.</p>
+                </div>
+
+                <p class="form-titulo text-form">Observações</p>
+                <textarea id="text-area" class="form-bg" name="comentário" rows="10" cols="40"></textarea>
+
+                <input type="submit" value="Enviar" class="submit">
+            </form>
+        </div>
+    </article>
+
+    <footer>
+
+        <div class="footer-top">
+            <div class="footer-endereco-logo">
+                <p class="footer-contato">Endereço: Loja - Rua Irmã Piá, 422 - Jaguare, São Paulo - SP,
+                    05335-050
+                </p>
+                <div class="footer-logo">
+                    <img class="logo" src="img/logo.png">
+                </div>
+            </div>
+
+            <div class="footer-menu">
+                <ul class="footer__menu-itens">
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#"> Início </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#"> Sob Medida </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#"> Aprenda a tirar suas medidas </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#"> Vale Presente </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#"> Contato </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p class="media-icons">
+                <a class="footer-link" href="https://pt-br.facebook.com/maschionsobmedida/" target="_blank">
+                    <img src="./img/facebook.png" alt="Ícone Facebook">
+                </a>
+                <a class="footer-link" href="https://www.instagram.com/maschioncamisaria/" target="_blank">
+                    <img src="./img/instagram.png" alt="Ícone Facebook">
+                </a>
+            </p>
+            <p>Horário de funcionamento: Seg - Sex: 10:00 – 17:00
+                Sáb: 10:00 – 13:00
+                - (11) 3766-3517 </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
