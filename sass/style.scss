@@ -258,7 +258,7 @@
 /* ABOUT */ 
 
 .sobre {
-    background-color: #b9a3a386;
+    background-color: #b8afaf5b;
     margin: 0 auto;
     position: absolute;
 }
@@ -348,10 +348,9 @@ footer {
 
 }
 
-
 .footer-menu {
     display: flex;
-    padding-left: 35px;
+    width: 140%;
 }
 
 .footer-bottom {
@@ -381,9 +380,7 @@ footer {
     padding: 5px;
 }
 
-.footer-logo{
-    margin: 5px auto;
-}
+
 
 
 /* PAGE 2 */
@@ -419,5 +416,11 @@ footer {
     display: block;
     padding: 10px;
     text-align: center;
+}
+
+.logo-footer {
+    width: 60%;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
