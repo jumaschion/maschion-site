@@ -6,9 +6,13 @@
     padding: 0;
     font-size: 13px;
     font-family: 'Cinzel', serif;
+   
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .topbar__menu-link--borda{
     border: 2px solid rgba(255, 235, 176, 0.747);
@@ -21,13 +25,18 @@
     text-decoration: none;
     text-transform: uppercase;
     color: inherit;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     padding: 25px;
     color: rgba(180, 172, 172, 0.829);
     
 }
+
+.topbar-preta {
+    color: #000;
+}
+
 .topbar__menu-link:hover {
-    color: rgba(211, 195, 195, 0.75)
+    color: rgba(197, 120, 32, 0.548);
 }
 
 
@@ -218,7 +227,7 @@
     font-weight: 300;
     text-transform: uppercase;
     color: #000;
-    margin-top: 150px;
+    margin-top: 90%;
     border-bottom: 1px solid black;
 
 }
@@ -244,7 +253,6 @@
 
 .opcoes {
     display: flex;
-
 }
 
 .opcoes-link {
@@ -253,10 +261,12 @@
 
 .opcoes-link-branco {
     color: white;
+    
 }
 
 .opcoes-link-preto {
     color: black;
+    
 }
 
 .crie-sua-camisa {
@@ -267,7 +277,7 @@
 }
 
 .agende-horario {
-    background-color: white;
+    background-color: #b8afaf5b;
     width: 50%;
     text-align: center;
     padding: 30px;
@@ -388,19 +398,28 @@ footer {
     padding: 5px;
 }
 
-
-
-
 /* PAGE 2 */
 
 
-.container {
-    margin: 10px 20px;
-    border: 1px solid black;
+// .container {
+//     margin: 10px 20px;
+//     border: 1px solid black;
+// }
+
+// .camisa-modelos {
+//     display: block;
+// }
+
+.genero {
+    padding: 5px;
 }
 
-.camisa-modelos {
-    display: block;
+.modelo-camisa {
+    width: 50%;
+}
+
+.modelo-camisa-genero {
+    width: 20%;
 }
 
 .form-camisa-titulo {
@@ -416,26 +435,39 @@ footer {
 }
 
  .punho1, .punho2, .punho3,  {
-    width: 80%;
-    height: 40vh;
+    width: 70%;
+    height: 16vh;
 }
 
 .colarinho1, .colarinho2, .colarinho3, {
     width: 80%;
-    height: 22vh;
+    height: 16vh;
 }
 
 .vista1, .vista2, .vista3 {
     width: 90%;
 }
 
-
-
-
 .camisa {
     display: block;
-    padding: 10px;
     text-align: center;
+    align-content: center;
+    margin-top: 15px;
+}
+
+.bolso {
+    text-align: center;
+    padding-bottom: 30px;   
+}
+
+.monograma-img {
+    width: 40%;
+}
+
+.monograma {
+    padding: 15px;
+    text-align: center;
+    background-color: #F3F3F3;
 }
 
 .logo-footer {
@@ -446,12 +478,12 @@ footer {
 
 /*MEDIAS */
 
-@media (min-width: 419px){
+@media (min-width: 576px){
     .titulo {
         margin-top: 10rem;
     }
     .img-sobre {
-        height: 40vh;
+        height: 50vh;
     }
 
     .footer__menu-link {
@@ -460,6 +492,11 @@ footer {
 
     * {
         font-size: 15px;
+    }
+
+    .punho1, .punho2, .punho3 {
+        width: 85%;
+    height: 30vh;
     }
 }
 
@@ -496,11 +533,44 @@ footer {
     }
 }
 
-@media (min-width: 1439px) {
-    
-    .logo {
-        width: 45%;
+@media (min-width: 1198px) {
+
+    .container-home {
+        margin-left: 100px;
+        margin-right: 100px;
     }
+
+
+    #main {
+        padding: 0;
+    }
+
+    .background {
+        height: 100vh;
+    }
+
+    .navigation {
+        display: none;
+    }
+    
+    .topbar {
+        display: flex;
+        position: absolute;
+    }
+
+    .titulo {
+        margin-top: 12rem;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .logo-footer {
+        width: 50%;
+        margin-left: 140px;
+    }
+
     .crie-sua-camisa {
         height: 30vh;
         padding: 115px;
@@ -512,7 +582,7 @@ footer {
     }
 
     .img-sobre {
-        height: 70vh;
+        height: 100vh;
         background-size: cover;
     }
 
@@ -520,7 +590,5 @@ footer {
         width: 50%;
     }
 
-    .logo {
-        width: 35%;
-    }
 }
+

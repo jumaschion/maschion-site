@@ -37,84 +37,86 @@
 
             <ul class="topbar__menu-itens">
                 <li class="topbar__menu-item">
-                    <a class="topbar__menu-link" href="#"> Início </a>
+                    <a class="topbar__menu-link topbar-preta" href="#home"> Início </a>
                 </li>
                 <li class="topbar__menu-item">
-                    <a class="topbar__menu-link" href="#"> Crie sua camisa </a>
+                    <a class="topbar__menu-link topbar-preta" href="camisas.html" target="_blank"> Crie sua camisa </a>
                 </li>
                 <li class="topbar__menu-item">
-                    <a class="topbar__menu-link" href="#"> Vale Presente </a>
+                    <a class="topbar__menu-link topbar-preta" href="#"> Vale Presente </a>
                 </li>
                 <li class="topbar__menu-item">
-                    <a class="topbar__menu-link" href="#"> Contato </a>
-                </li>
-                <li class="topbar__menu-item-hamburguer">
-                    <a class="topbar__menu-hamburguer" href="#">
-                        <img class="hamburguer" src="img/hamburguer.png">
-                    </a>
+                    <a class="topbar__menu-link topbar-preta" href="#contato"> Contato </a>
                 </li>
             </ul>
         </div>
 
     </nav>
     <header class="background-page2">
-            <div class="caixa-titulo">
-                <h1 class="titulo-page2"> Crie sua camisa </h1>
-            </div>
+        <div class="caixa-titulo">
+            <h1 id="criar" class="titulo-page2"> Crie sua camisa </h1>
+        </div>
     </header>
 
-    <section class="form-camisas">
+    <section  class="form-camisas">
+        <div class="container-camisas">
 
-        <div class="container">
             <form action="/pagina-processa-dados-do-form" method="post">
-
-
                 <div class="camisa">
                     <div class="titulo-camisa">
                         <h1>1. ESTILO DA CAMISA</h1>
                     </div>
-                    <div class="camisa">
-                        <label>
-                            <img src="./img/camisa-medidas.png" alt="Camisa e quadro de medidas">
-                        </label>
+                    <div class="genero">
+                            <input type="radio" name="camisa-genero"> 
+                            <label class="genero">Feminina</label>
+                            <input type="radio" name="camisa-genero"> 
+                            <label class="genero" for="">Masculina</label>
                     </div>
-                    <input type="checkbox" name="checkbox" disabled>
-                    <span>Camisa Slim</span>
+                    
+                    <div class="camisa">
+                            <img class="modelo-camisa" src="./img/slim-fit.jpg" alt="Camisa e quadro de medidas">
+                        </div>
+                         <div>
+                        <input type="radio" name="camisa"> 
+                        <label>Camisa Slim</label>
+                    </div>
+                    
 
                     <div class="camisa">
-                        <label>
-                            <img src="./img/camisa-medidas.png" alt="Camisa e quadro de medidas">
-                        </label>
+                            <img class="modelo-camisa" src="./img/regular-fit.jpg" alt="Camisa e quadro de medidas">
+                        </div>
+                 
+                        <input type="radio" name="camisa">
+                        <label>Camisa Regular</label>
+                    
                     </div>
-                    <input type="checkbox" name="checkbox" disabled>
-                    <span>Camisa Slim</span>
-                </div>
-
-                </label>
+               
                 <div class="form-camisa-titulo">
                     <h1>2. COLARINHOS</h1>
                 </div>
+             
                 <div class="colarinhos">
                     <label>
                         <div class="colarinho-classico">
                             <img class="colarinho1" src="./img/colarinho-classico.png" alt="Imagem de colarinho de camisa modelo clássico">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
-                        <span>COLARINHO</span>
+                            <input type="radio" name="colarinho">
+                            <span>COLARINHO</span>
                     </label>
 
                     <label>
                         <div class="colarinho-ingles-classico">
                             <img class="colarinho2" src="./img/colarinho-ingles-classico.png" alt="Imagem de colarinho de camisa modelo inglês clássico">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
+                        <input type="radio" name="colarinho">
                         <span>COLARINHO</span>
                     </label>
+
                     <label>
                         <div class="colarinho-semi-italiano">
                             <img class="colarinho3" src="./img/colarinho-semi-taliano.png" alt="Imagem de colarinho de camisa modelo semi-italiano">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
+                        <input type="radio" name="colarinho">
                         <span>COLARINHO</span>
                     </label>
                 </div>
@@ -127,7 +129,7 @@
                         <div class="punho-chanfrado">
                             <img class="punho1" src="./img/punho-chanfrado-simples.png" alt="Imagem de punho de camisa chanfrado">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
+                        <input type="radio" name="punho">
                         <span>punho</span>
                     </label>
 
@@ -135,14 +137,14 @@
                         <div class="punho-duplo">
                             <img class="punho2" src="./img/punho-duplo.png" alt="Imagem de punho de camisa duplo">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
+                        <input type="radio" name="punho">
                         <span>punho</span>
                     </label>
                     <label>
                         <div class="punho-simples-redondo">
                             <img class="punho3" src="./img/punho-simples-redondo.png" alt="Imagem de punho de camisa simples redondo">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
+                        <input type="radio" name="punho">
                         <span>punho</span>
                     </label>
                 </div>
@@ -155,7 +157,7 @@
                         <div class="vista-aviador">
                             <img class="vista1" src="./img/vista-aviador.png" alt="Imagem de vista de camisa modelo vista-aviador">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
+                        <input type="radio" name="vista">
                         <span>Vista</span>
                     </label>
 
@@ -163,28 +165,58 @@
                         <div class="vista-coberta">
                             <img class="vista2" src="./img/vista-coberta.png" alt="Imagem de vista de camisa modelo vista coberta">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
+                        <input type="radio" name="vista">
                         <span>Vista</span>
                     </label>
                     <label>
                         <div class="vista-lisa">
                             <img class="vista3" src="./img/vista-lisa.png" alt="Imagem de vista de camisa modelo vista lisa">
                         </div>
-                        <input type="checkbox" name="checkbox" disabled>
+                        <input type="radio" name="vista">
                         <span>Vista</span>
                     </label>
                 </div>
+
+                <div class="form-camisa-titulo">
+                        <h1>5. BOLSO</h1>
+                    </div>
+                    <div class="bolso">
+                            <input type="radio" name="bolso">
+                            <span>Sim</span>
+                            <input type="radio" name="bolso">
+                            <span>Não</span>
+                    </div>
             </form>
+            <div class="monograma">
+                    <h1 class="titulo-camisa">6. MONOGRAMA</h1>
+                    <img class="monograma-img"src="./img/monograma.jpg" alt="Monograma">
+                    <div class="monograma-iniciais">
+                        <input type="text" placeholder="Suas iniciais" maxlength="3" >
+                    </div>
+                </div>
             <div class="camisa">
                 <h1 class="titulo-camisa">SUA CAMISA</h1>
                 <img src="./img/camisas-manequim.png" alt="camisa">
+                <div class="tamanho">
+                        <input type="radio" name="vista"> 36
+                        <input type="radio" name="vista"> 38
+                        <input type="radio" name="vista"> 40
+                        <input type="radio" name="vista"> 42
+                        <input type="radio" name="vista"> 44
+                        <input type="radio" name="vista"> 46
+                
+                </div>
+                <div class="valor">
+                    <input type="text" placeholder="R$">
+                </div>
             </div>
+
         </div>
     </section>
 
-    <article class="formulario-contato">
+    <section class="formulario-contato">
 
-        <h2 class="formulario-titulo"></h2>
+        <h2 class="formulario-titulo">CONTATO</h2>
         <div class="form">
             <form action="Obrigada!">
 
@@ -194,25 +226,20 @@
 
                     <label class="text-form" for="email">Email</label>
                     <input class="form-bg" type="text" name="email">
-
-
-                    <label class="text-form" for="tel">Telefone</label>
-                    <input class="form-bg" type="tel" name="tel">
                 </div>
 
-                <div class="input-group">
-                        <label class="text-form" for="cep">CEP</label>
-                        <input class="form-bg" name="cep" id="cep" type="number" />
-                        <p id="cep-error">Este CEP é inválido.</p>
+                <div class="form-subject">
+                    <label class="text-form" for="subject">Assunto</label>
+                    <input class="form-bg" type="text" name="subject">
                 </div>
 
-                <p class="form-titulo text-form">Observações</p>
+                <p class="form-titulo text-form">Mensagem</p>
                 <textarea id="text-area" class="form-bg" name="comentário" rows="10" cols="40"></textarea>
 
                 <input type="submit" value="Enviar" class="submit">
             </form>
         </div>
-    </article>
+    </section>
 
     <footer>
 
@@ -229,16 +256,16 @@
             <div class="footer-menu">
                 <ul class="footer__menu-itens">
                     <li class="footer__menu-item">
-                        <a class="footer__menu-link" href="#"> Início </a>
+                        <a class="footer__menu-link" href="home.html"> Início </a>
                     </li>
                     <li class="footer__menu-item">
-                        <a class="footer__menu-link" href="#"> Crie sua camisa </a>
+                        <a class="footer__menu-link" href="#criar"> Crie sua camisa </a>
                     </li>
                     <li class="footer__menu-item">
                         <a class="footer__menu-link" href="#"> Vale Presente </a>
                     </li>
                     <li class="footer__menu-item">
-                        <a class="footer__menu-link" href="#"> Contato </a>
+                        <a class="footer__menu-link" href="home.html#contato" target="_blank"> Contato </a>
                     </li>
                 </ul>
             </div>
