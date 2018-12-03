@@ -62,7 +62,7 @@
 .navigation a {
   text-decoration: none;
   font-family: 'Cinzel', serif;
-  font-size: 1.6rem; }
+  font-size: 1.2rem; }
 
 .navigation ul {
   margin-top: 30px;
@@ -174,7 +174,7 @@
   color: #b1b1b1;
   display: flex;
   flex-direction: column;
-  margin-top: 25rem; }
+  margin-top: 14rem; }
 
 .titulo-page2 {
   font-size: 1.8rem;
@@ -242,7 +242,7 @@
 
 .formulario-titulo {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: #0e0d0d;
   padding: 30px;
@@ -264,7 +264,7 @@
 
 .text-form {
   color: #000;
-  font-size: 1.8rem; }
+  font-size: 1.5rem; }
 
 #text-area {
   height: 75px; }
@@ -353,5 +353,64 @@ footer {
 .logo-footer {
   margin-left: 30px;
   margin-top: 10px; }
+
+/*MEDIAS */
+@media (min-width: 419px) {
+  .titulo {
+    margin-top: 10rem; }
+
+  .img-sobre {
+    height: 40vh; }
+
+  .footer__menu-link {
+    font-size: 1.1rem; }
+
+  * {
+    font-size: 15px; } }
+@media (min-width: 768px) {
+  .titulo {
+    margin-top: 3rem; }
+
+  .logo {
+    width: 50%; }
+
+  .crie-sua-camisa {
+    padding: 70px; }
+
+  .agende-horario {
+    padding: 70px; }
+
+  .img-sobre {
+    height: 70vh; }
+
+  * {
+    font-size: 1.1rem; }
+
+  .logo-footer {
+    margin-left: 55px; }
+
+  .footer-horarios {
+    width: 55%; } }
+@media (min-width: 1439px) {
+  .logo {
+    width: 45%; }
+
+  .crie-sua-camisa {
+    height: 30vh;
+    padding: 115px; }
+
+  .agende-horario {
+    height: 30vh;
+    padding: 115px; }
+
+  .img-sobre {
+    height: 70vh;
+    background-size: cover; }
+
+  .footer-menu {
+    width: 50%; }
+
+  .logo {
+    width: 35%; } }
 
 /*# sourceMappingURL=style.css.map */
