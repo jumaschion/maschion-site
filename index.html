@@ -102,30 +102,31 @@
         </article>
     </div>
 
-    <section id="contato" class="formulario-contato">
+    <section id="contato" class="formulario-contato" >
 
         <h2 class="formulario-titulo">CONTATO</h2>
-        <div class="form" name="contact" action="sus
-        ccsess" netlify>
-            <form action="Obrigada!">
+
+        <div class="form" name="contact" action="success" netlify>
+
+            <form class="formulario-contato-home" name="contato" action="success" netlify>
 
                 <div class="form-nome">
                     <label class="text-form" for="name">Nome</label>
-                    <input class="form-bg" type="text" name="name">
+                    <input class="form-bg" type="name" name="name" placeholder="Nome">
 
                     <label class="text-form" for="email">Email</label>
-                    <input class="form-bg" type="text" name="email">
+                    <input class="form-bg" type="email" name="email"  placeholder="email@email.com">
                 </div>
 
                 <div class="form-subject">
                     <label class="text-form" for="subject">Assunto</label>
-                    <input class="form-bg" type="text" name="subject">
+                    <input class="form-bg" type="subject" name="subject" placeholder="Assunto">
                 </div>
 
                 <p class="form-titulo text-form">Mensagem</p>
-                <textarea id="text-area" class="form-bg" name="comentário" rows="10" cols="40"></textarea>
+                <textarea id="text-area" class="form-bg" name="message" placeholder="Mensagem" rows="10" cols="40"></textarea>
 
-                <input type="submit" value="Enviar" class="submit">
+               <button class="submit">Enviar</button>
             </form>
         </div>
     </section>
@@ -176,7 +177,10 @@
     </footer>
 
 
-
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="script/validacao.js"></script>
+    <script src="script/camisas.js"></script>
     <script src="script/script.js"></script>
 </body>
 
