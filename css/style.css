@@ -254,11 +254,8 @@ html {
   padding: 30px;
   margin: 0 auto; }
 
-.form {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-  padding-bottom: 15px; }
+.formulario-contato-home {
+  width: 50%; }
 
 .form-bg {
   resize: none;
@@ -273,7 +270,7 @@ html {
   font-size: 1.5rem; }
 
 #text-area {
-  height: 75px; }
+  height: 100px; }
 
 .submit {
   background-color: #353541;
@@ -384,6 +381,18 @@ footer {
 .logo-footer {
   margin-left: 30px;
   margin-top: 10px; }
+
+/* ERROR */
+li.error {
+  color: rgba(255, 0, 0, 0.774);
+  font-weight: bold;
+  font-size: 1rem; }
+
+input.error {
+  border-color: rgba(255, 0, 0, 0.548); }
+
+textarea.error {
+  border-color: rgba(255, 0, 0, 0.548); }
 
 /*MEDIAS */
 @media (min-width: 576px) {

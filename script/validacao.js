@@ -13,12 +13,12 @@ form.validate({
     },
     messages: {
       email: {
-        required: "We need your email address to contact you / Precisamos do seu e-mail para entrar em contato.",
-        email: "Your email address must be in the format of name@domain.com / Seu e-mail deve ser no formato nome@dominio.com."
+        required: "Precisamos do seu e-mail para entrar em contato.",
+        email: "Seu e-mail deve ser no formato nome@dominio.com."
       },
-        name: "Please specify your name / Por favor, digite seu nome.",
-        subject: "Please write a subject / Por favor, escreva o assunto.",
-        message: "Please, write a message / Por favor, escreva uma mensagem."
+        name: "Por favor, digite seu nome.",
+        subject: "Por favor, escreva o assunto.",
+        message: "Por favor, escreva uma mensagem."
       }
 
   });
