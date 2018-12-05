@@ -196,7 +196,7 @@
                     <h1 class="titulo-camisa">6. MONOGRAMA</h1>
                     <img class="monograma-img" src="./img/monograma.jpg" alt="Monograma">
                     <div class="monograma-iniciais">
-                        <input type="text" placeholder="Suas iniciais" maxlength="3">
+                        <textarea id="input-mono" type="text" placeholder="Suas iniciais" maxlength="3"></textarea>
                     </div>
                 </div>
 
@@ -204,12 +204,12 @@
                     <h1 class="titulo-camisa">7. TAMANHO DA SUA CAMISA</h1>
 
                     <div class="tamanho">
-                        <input type="radio" name="tamanho" value="36"> <label for="tamanho">36</label> 
-                        <input type="radio" name="tamanho" value="38"> 38 <label for="tamanho">38</label> 
-                        <input type="radio" name="tamanho" value="40"><label for="tamanho">40</label> 
-                        <input type="radio" name="tamanho" value="42"> 42 <label for="tamanho">42</label> 
-                        <input type="radio" name="tamanho" value="44"> 44 <label for="tamanho">44</label> 
-                        <input type="radio" name="tamanho" value="46"> 46 <label for="tamanho">46</label> 
+                        <input type="radio" name="tamanho" value="36"><label for="tamanho">36</label>
+                        <input type="radio" name="tamanho" value="38"><label for="tamanho">38</label>
+                        <input type="radio" name="tamanho" value="40"><label for="tamanho">40</label>
+                        <input type="radio" name="tamanho" value="42"><label for="tamanho">42</label>
+                        <input type="radio" name="tamanho" value="44"><label for="tamanho">44</label>
+                        <input type="radio" name="tamanho" value="46"><label for="tamanho">46</label>
 
                     </div>
 
@@ -222,7 +222,7 @@
                             <div class="tecido">
                                 <img class="tecido-img" src="./img/tecido1.jpg" alt="Tecido Azul com xadrez branco">
                                 <div>
-                                    <input id="tecido1" onchange="retornaPreco()" type="radio" name="tecido" value="tecido1">
+                                    <input id="tecido1" type="radio" name="tecido" value="tecido1">
                                     <label for="tecido">Tecido Azul</label>
                                 </div>
                             </div>
@@ -231,8 +231,7 @@
                                 <img class="tecido-img" src="./img/tecido2.jpg" alt="">
 
                                 <div>
-                                    <input id="tecido2" onchange="retornaPreco()" type="radio" name="tecido"
-                                    value="tecido2">
+                                    <input id="tecido2" onchange="retornaPreco()" type="radio" name="tecido" value="tecido2">
                                     <label for="tecido">Tecido Xadrez Vermelho</label>
                                 </div>
                             </div>
@@ -241,8 +240,7 @@
                                 <img class="tecido-img" src="./img/tecido3.jpg" alt="">
 
                                 <div>
-                                    <input id="tecido3" onchange="retornaPreco()" type="radio" name="tecido"
-                                    value="tecido3">
+                                    <input id="tecido3" onchange="retornaPreco()" type="radio" name="tecido" value="tecido3">
                                     <label for="tecido">Tecido Preto Liso</label>
                                 </div>
                             </div>
@@ -251,8 +249,7 @@
                                 <img class="tecido-img" src="./img/tecido4.jpg" alt="">
 
                                 <div>
-                                    <input id="tecido4" onchange="retornaPreco()" type="radio" name="tecido"
-                                    value="tecido4">
+                                    <input id="tecido4" onchange="retornaPreco()" type="radio" name="tecido" value="tecido4">
                                     <label for="tecido">Tecido Preto Liso</label>
                                 </div>
                             </div>
@@ -262,8 +259,7 @@
                                 <img class="tecido-img" src="./img/tecido5.png" alt="">
 
                                 <div>
-                                    <input id="tecido5" onchange="retornaPreco()" type="radio" name="tecido"
-                                    value="tecido5">
+                                    <input id="tecido5" onchange="retornaPreco()" type="radio" name="tecido" value="tecido5">
                                     <label for="tecido">Tecido Preto Liso</label>
                                 </div>
                             </div>
@@ -274,11 +270,24 @@
 
                 <div class="valor">
                     <span>Valor da camisa:</span>
-                    <input id="input-valor" readonly type="text" placeholder="R$">
+                    <div>
+                        <textarea id="input-valor" readonly type="text" placeholder="R$" value=""></textarea>
+                    </div>
+                </div>
+
+                <div class="form-contato-camisas">
+                    <label class="text-form" for="name">Nome</label>
+                    <input class="form-bg" type="name" name="name" placeholder="Nome">
+
+                    <label class="text-form" for="tel">Telefone</label>
+                    <input class="form-bg" type="tel" name="tel" placeholder="Telefone ()" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+
+                    <label class="text-form" for="email">Email</label>
+                    <input class="form-bg" type="email" name="email" placeholder="email@email.com">
                 </div>
 
                 <div class="enviar">
-                        <button class="submit">Enviar</button>
+                    <button class="submit">Enviar</button>
                 </div>
             </form>
 
@@ -337,8 +346,8 @@
 
 
 
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+    <script src="script/jquery.slim.min.js"></script>
+    <script src="script/jquery.validate.min.js"></script>
     <script src="script/camisas.js"></script>
     <script src="script/script.js"></script>
 </body>

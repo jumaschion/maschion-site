@@ -15,10 +15,13 @@ function retornaPreco () {
     for ( i=0; i < tecido.length; i++){
         if(tecido[i].checked === true){
        
-            valor.value = (camisaConfig[`${tecido[i].id}`])
+            document.getElementById("input-valor").innerHTML = (camisaConfig[`${tecido[i].id}`])
         }
     }
 }
 
 
 
+document.getElementById('tecido1').addEventListener('click', () => {
+    valor.value = 'banana'
+})
