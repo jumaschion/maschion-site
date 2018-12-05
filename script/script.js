@@ -1,7 +1,7 @@
-const nav = document.getElementById("topNav");
-const main = document.getElementById("main");
-const menu = document.getElementsByClassName("menuitems");
-const close = document.getElementById("closebtn");
+let nav = document.getElementById("topNav");
+let main = document.getElementById("main");
+let menu = document.getElementsByClassName("menuitems");
+let close = document.getElementById("closebtn");
 
 //default to measure if/else from
 nav.style.height = "50px";
@@ -10,7 +10,7 @@ for (i = 0; i < menu.length; i++)
 {menu[i].style.marginTop="100px";};
 
 close.addEventListener("click", function(){
-  const menuIcon = close.children;
+  let menuIcon = close.children;
   for (i = 0; i < menuIcon.length; i++){
   menuIcon[i].classList.toggle("active");
   }   
@@ -22,7 +22,7 @@ function navToggle() {
 	nav.style.height = "50px";
 	main.style.marginTop = "0px";
 	
-    	const i = 0;
+    	let i = 0;
     	for (i = 0; i < menu.length; i++){
 	menu[i].style.opacity="0.0";
 	menu[i].style.marginTop="100px";
@@ -34,7 +34,7 @@ function navToggle() {
 	else if (nav.style.height <= "50px") {
 	nav.style.height = "235px";
 	
-    	const i = 0;
+    	let i = 0;
     	for (i = 0; i < menu.length; i++){
 	menu[i].style.opacity="1.0";
 	menu[i].style.marginTop="0px";

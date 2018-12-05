@@ -373,11 +373,6 @@ footer {
   text-align: center;
   background-color: #F3F3F3; }
 
-.campo-obrigatorio {
-  color: red;
-  text-align: center;
-  font-size: 0.9rem; }
-
 .tecidos-escolha {
   display: flex;
   flex-wrap: wrap;
