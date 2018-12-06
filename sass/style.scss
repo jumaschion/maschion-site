@@ -574,11 +574,21 @@ textarea.error {
 
 @media (min-width: 1198px) {
 
+    .wrapper-primaria {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    }
+
+    .wrapper-secundaria {
+        display: flex;
+        align-items: center;
+    }
+
     .container-home {
         margin-left: 100px;
         margin-right: 100px;
     }
-
 
     #main {
         padding: 0;
@@ -642,8 +652,8 @@ textarea.error {
     }
 
     .img-sobre {
-        height: 100vh;
-        background-size: cover;
+        width: 50%;
+        height: 60vh;
     }
 
 

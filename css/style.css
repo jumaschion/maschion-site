@@ -450,6 +450,15 @@ textarea.error {
   .footer-horarios {
     width: 55%; } }
 @media (min-width: 1198px) {
+  .wrapper-primaria {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse; }
+
+  .wrapper-secundaria {
+    display: flex;
+    align-items: center; }
+
   .container-home {
     margin-left: 100px;
     margin-right: 100px; }
@@ -502,8 +511,8 @@ textarea.error {
     padding: 115px; }
 
   .img-sobre {
-    height: 100vh;
-    background-size: cover; }
+    width: 50%;
+    height: 60vh; }
 
   .footer-menu {
     width: 50%; } }
