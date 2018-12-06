@@ -90,26 +90,29 @@
                         <h1>1. ESTILO DA CAMISA</h1>
                     </div>
                   
-                    <div class="genero">
-                        <input type="radio" name="camisa-genero" value="Feminina" required >
-                        <label class="genero" for="casmisa-genero">Feminina</label>
-                        <input type="radio" name="camisa-genero" value="Masculino" required >
+                    <div class="form-item genero">
+                        <input type="radio" name="camisaGenero" value="Feminina" required >
+                        <label class="genero" for="camisa-genero">Feminina</label>
+                        <input type="radio" name="camisaGenero" value="Masculino" required >
                         <label class="genero" for="camisa-genero">Masculina</label>
                     </div>
 
-                    <div class="camisa">
-                        <img class="modelo-camisa" src="./img/slim-fit.jpg" alt="Camisa e quadro de medidas">
-                    </div>
+                    <div class="form-item">
 
-                    <input type="radio" name="camisa" value="Camisa Slim" required>
-                    <label for="camisa">Camisa Slim</label>
-                    
-                    <div class="camisa">
-                        <img class="modelo-camisa" src="./img/regular-fit.jpg" alt="Camisa e quadro de medidas">
+                        <div class="camisa">
+                            <img class="modelo-camisa" src="./img/slim-fit.jpg" alt="Camisa e quadro de medidas">
+                        </div>
+                        
+                        <input type="radio" name="camisa" value="Camisa Slim" required>
+                        <label for="camisa">Camisa Slim</label>
+                        
+                        <div class="camisa">
+                            <img class="modelo-camisa" src="./img/regular-fit.jpg" alt="Camisa e quadro de medidas">
+                        </div>
+                        
+                        <input type="radio" name="camisa" value="Camisa Regular" required>
+                        <label for="camisa">Camisa Regular</label>
                     </div>
-
-                    <input type="radio" name="camisa" value="Camisa Regular" required>
-                    <label for="camisa">Camisa Regular</label>
 
                 </div>
 
@@ -118,7 +121,7 @@
                 </div>
               
 
-                <div class="colarinhos">
+                <div class="form-item colarinhos">
                     <div class="colarinho-classico">
                         <div class="colarinho-classico-img">
                             <img class="colarinho1" src="./img/colarinho-classico.png" alt="Imagem de colarinho de camisa modelo clássico">
@@ -148,7 +151,7 @@
                     <h1>3. PUNHOS</h1>
                 </div>
               
-                <div class="punhos">
+                <div class="form-item punhos">
 
                     <div class="punho-chanfrado">
                         <div class="punho-chanfrado-img">
@@ -179,8 +182,7 @@
                     <h1>4. VISTA</h1>
                 </div>
               
-
-                <div class="vista">
+                <div class="form-item vista">
                     
                     <div class="vista-aviador">
                         <div class="vista-aviador-img">
@@ -210,7 +212,7 @@
                 <div class="form-camisa-titulo">
                     <h1>5. BOLSO</h1>
                 </div>
-                <div class="bolso">
+                <div class="form-item bolso">
                     <input type="radio" name="bolso" value="Sim" required>
                     <label for="bolso">Sim</label>
                     <input type="radio" name="bolso" value="Não" required>
@@ -218,7 +220,7 @@
                   
                 </div>
 
-                <div class="monograma">
+                <div class="form-item monograma">
                     <h1 class="titulo-camisa">6. MONOGRAMA</h1>
                     <img class="monograma-img" src="./img/monograma.jpg" alt="Monograma">
                     <div class="monograma-iniciais">
@@ -230,7 +232,7 @@
                 <div class="camisa">
                     <h1 class="titulo-camisa">7. TAMANHO DA SUA CAMISA</h1>
 
-                    <div class="tamanho">
+                    <div class="form-item tamanho">
                        
                         <input type="radio" name="tamanho" value="36" required ><label for="tamanho">36</label>
                         
@@ -255,7 +257,7 @@
 
                         <h1 class="titulo-camisa">8. TECIDO</h1>
 
-                        <div class="tecidos-escolha">
+                        <div class="form-item tecidos-escolha">
 
                             <div class="tecido">
                                 <img class="tecido-img" src="./img/tecido1.jpg" alt="Tecido Azul com xadrez branco">

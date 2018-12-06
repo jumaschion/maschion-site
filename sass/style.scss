@@ -15,7 +15,7 @@ html {
 }
 
 .topbar__menu-link--borda{
-    border: 2px solid rgba(255, 235, 176, 0.747);
+    border: 2px solid #B3BFB8;
     border-radius: 8px 6px;
     padding: 8px 15px;
     color: #FFEBB0;
@@ -27,7 +27,7 @@ html {
     color: inherit;
     font-size: 1.2rem;
     padding: 25px;
-    color: rgba(180, 172, 172, 0.829);
+    color: #B3BFB8;
     
 }
 
@@ -36,7 +36,7 @@ html {
 }
 
 .topbar__menu-link:hover {
-    color: rgba(197, 120, 32, 0.548);
+    color: #F18805;
 }
 
 
@@ -75,10 +75,10 @@ html {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #353541;
-    box-shadow: 0 4px 4px -3px #232323;
-    -moz-box-shadow: 0 4px 4px -3px #232323;
-    -webkit-box-shadow: 0 4px 4px -3px #232323;
+    background-color: #353535;
+    box-shadow: 0 4px 4px -3px #353535;
+    -moz-box-shadow: 0 4px 4px -3px #353535;
+    -webkit-box-shadow: 0 4px 4px -3px #353535;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
     padding-top: 0px;
@@ -104,7 +104,7 @@ html {
 
 .line1, .line2, .line3 {
   margin-top:5px;
-  background-color:#fff;
+  background-color:#626868;
   width:25px;
   height:3px;
   display:block;
@@ -117,18 +117,18 @@ html {
 .line1.active {
   transform: rotate(270deg);
   opacity:0.0;
-  background-color:rgba(126, 122, 88, 0.397);
+  background-color:#626868;
   top:5px;
 }
 
 .line2.active {
   transform: rotate(45deg);
-  background-color:rgba(126, 122, 88, 0.397);
+  background-color:#626868;
 }
 
 .line3.active {
   transform: rotate(-45deg);
-  background-color:rgba(126, 122, 88, 0.397);
+  background-color:#626868;
   top:-7px;
 }
 
@@ -214,7 +214,7 @@ html {
 }
 
 .titulo {
-    color: #b1b1b1;
+    color: rgb(1, 2, 2);
     display: flex;
     flex-direction: column;
     margin-top: 14rem;
@@ -234,20 +234,11 @@ html {
 
 .subtitulo {
     font-size: 1.5rem;
+    color: #B3BFB8;
 }
 
-.caixa-btn-header {
-    margin-top: 40px;
-}
 
-.btn-yellow{
-  color: #8F783A;
-  background-color:rgb(65, 54, 20);
-  padding: 15px 45px;
-  border-radius: 3px;
-  font-weight:bold;
-  font-size: 2.5rem;
-}
+
 
 /* OPCOES */
 
@@ -270,14 +261,14 @@ html {
 }
 
 .crie-sua-camisa {
-    background-color: rgb(34, 28, 28);
+    background-color: #353535;
     width: 50%;
     text-align: center;
     padding: 38px;
 }
 
 .agende-horario {
-    background-color: #b8afaf5b;
+    background-color: #F5F9E9;
     width: 50%;
     text-align: center;
     padding: 30px;
@@ -286,7 +277,7 @@ html {
 
 .sobre {
     flex-direction: column;
-    background-color: #b8afaf5b;
+    background-color: #F5F9E9;
 }
 
 .sobre-maschion-text {
@@ -301,7 +292,7 @@ html {
 /* CONTATO */
 
 .formulario-contato {
-    background-color: #F3F3F3;
+    background-color: rgba(222, 226, 211, 0.904);
 }
 
 .formulario-home {
@@ -323,7 +314,7 @@ html {
 }
 .form-bg {
     resize: none;
-    background-color: rgba(197, 120, 32, 0.548);
+    background-color: rgb(236, 208, 131);
     border: 1px solid #E5D7B0;
     width: 100%;
     height: 30px;
@@ -351,7 +342,7 @@ html {
 /* FOOTER */ 
 
 footer {
-    background-color: #353541;
+    background-color: #434743;
     color: white;
     width: 100%;
     bottom: 0;
@@ -374,7 +365,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #2c2c36;
+    background-color: #353535;
     display: block;
     width: 100%;
     bottom: 0px;
@@ -498,11 +489,11 @@ footer {
 
 /* ERROR */
 
-li.error {
+div.error {
     color: rgba(255, 0, 0, 0.774);
     font-weight: bold;
     font-size: 1rem;
-
+    text-align: center;
 }
 
 input.error {
