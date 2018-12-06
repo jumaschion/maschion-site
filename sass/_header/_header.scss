@@ -1,0 +1,166 @@
+.logo {
+    width: 60%;
+}
+
+@media (min-width: 768px) {
+
+
+    .logo {
+        width: 50%;
+    }
+}
+@media (min-width: 1198px) {
+    .logo {
+        width: 70%;
+    }
+}
+
+.background {
+    background-image: url(../img/maquina-costura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    text-align: center;
+    top: 0;
+}
+
+@media (min-width: 1198px) {
+    .background {
+        height: 100vh;
+    }
+}
+
+.background-page2 {
+    background-image: url(../img/fita-metrica.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    top: 0;
+}
+
+.titulo {
+    color: rgb(1, 2, 2);
+    display: flex;
+    flex-direction: column;
+    margin-top: 14rem;
+}
+@media (min-width: 576px){
+    .titulo {
+        margin-top: 10rem;
+    }
+}
+@media (min-width: 768px) {
+    .titulo {
+        margin-top: 3rem;
+    }
+}
+@media (min-width: 1198px) {
+    .titulo {
+        margin-top: 12rem;
+    }
+}
+
+.titulo-page2 {
+    font-size: 1.8rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 55%;
+    border-bottom: 1px solid black;
+
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    color: #B3BFB8;
+}
+
+.opcoes {
+    display: flex;
+}
+
+.opcoes-link {
+    text-decoration: none;
+}
+
+.opcoes-link-branco {
+    color: white;
+    
+}
+
+.opcoes-link-preto {
+    color: black;
+    
+}
+
+
+.crie-sua-camisa {
+    background-color: #353535;
+    width: 50%;
+    text-align: center;
+    padding: 38px; }
+
+    @media (min-width: 768px) {
+
+    .crie-sua-camisa {
+        padding: 70px;
+    }
+}
+
+@media (min-width: 1198px) {
+    .crie-sua-camisa {
+        height: 30vh;
+        padding: 115px;
+    }
+}
+    
+  
+  .agende-horario {
+    background-color: #F5F9E9;
+    width: 50%;
+    text-align: center;
+    padding: 30px; }
+
+
+@media (min-width: 768px) {
+
+    .agende-horario {
+        padding: 70px;
+    }
+
+}
+
+@media (min-width: 1198px) {
+
+    .agende-horario {
+        height:  30vh;
+        padding: 115px;
+    }
+}
+
+@media (min-width: 1198px) {
+
+    .wrapper-primaria {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .wrapper-secundaria {
+            display: flex;
+            align-items: center;
+    }
+
+    .container-home {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}
+
+

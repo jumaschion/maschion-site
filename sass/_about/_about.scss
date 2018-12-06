@@ -1,0 +1,32 @@
+.sobre {
+    flex-direction: column;
+    background-color: #F5F9E9;
+}
+
+.sobre-maschion-text {
+    padding: 27px;
+}
+
+.img-sobre {
+   width: 100%;
+   height: 35vh;
+}
+@media (min-width: 576px){
+  
+    .img-sobre {
+        height: 50vh;
+    }
+}
+@media (min-width: 768px) {
+    .img-sobre {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1198px) {
+    
+    .img-sobre {
+        width: 50%;
+        height: 60vh;
+    }
+}

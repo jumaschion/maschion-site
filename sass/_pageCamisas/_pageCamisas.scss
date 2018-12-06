@@ -1,0 +1,130 @@
+
+.genero {
+    padding: 5px;
+}
+
+
+.modelo-camisa {
+    width: 90%;
+}
+
+@media (min-width: 1198px) {
+    .modelo-camisa {
+        width: 50%;
+    }
+}
+
+.modelo-camisa-genero {
+    width: 20%;
+}
+
+.form-camisa-titulo {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.colarinhos, .vista, .punhos, {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+ .punho1, .punho2, .punho3,  {
+    width: 60%;
+    height: 16vh;
+}
+
+@media (min-width: 576px){
+    .punho1, .punho2, .punho3 {
+        width: 80%;
+    height: 30vh;
+    }
+}
+
+@media (min-width: 1198px) {
+    .punho1, .punho2, .punho3 {
+        width: 100%;
+        height: 25vh;
+        }
+}
+
+.colarinho1, .colarinho2, .colarinho3 {
+    width: 80%;
+    height: 15vh;
+}
+
+.vista1, .vista2, .vista3 {
+    width: 90%;
+}
+
+.camisa {
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin-top: 15px;
+}
+
+.bolso {
+    text-align: center;
+    padding-bottom: 30px;   
+}
+
+.monograma-img {
+    width: 80%;
+}
+
+@media (min-width: 1198px) {
+    .monograma-img {
+        width: 50%;
+    }
+}
+
+.monograma {
+    padding: 15px;
+    text-align: center;
+    background-color: #F3F3F3;
+}
+
+
+.tecidos-escolha {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+@media (min-width: 1198px) {
+    .tecidos-escolha {
+        display: flex;
+    }
+}
+
+.tecido {
+    width:  50%;
+}
+
+@media (min-width: 1198px) {
+    .tecido {
+        width: 20%;
+    }
+}
+
+.tecido-img {
+    width: 50%;
+}
+
+.valor {
+    resize: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#input-valor, #input-mono {
+    height: 22px;
+}
+
+
+.logo-footer {
+    margin-left: 30px;
+    margin-top: 10px;
+}

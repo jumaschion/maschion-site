@@ -1,0 +1,19 @@
+/* GERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Cinzel', serif;
+}
+
+@media (min-width: 768px) {
+    * {
+        font-size: 1.1rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

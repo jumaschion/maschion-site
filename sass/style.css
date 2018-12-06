@@ -1,0 +1,583 @@
+/* GERAL */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 13px;
+  font-family: 'Cinzel', serif;
+}
+
+@media (min-width: 768px) {
+  * {
+    font-size: 1.1rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.topbar__menu-link--borda {
+  border: 2px solid #B3BFB8;
+  border-radius: 8px 6px;
+  padding: 8px 15px;
+  color: #FFEBB0;
+}
+
+.topbar__menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  font-size: 1.2rem;
+  padding: 25px;
+  color: #B3BFB8;
+}
+
+.topbar-preta {
+  color: #000;
+}
+
+.topbar__menu-link:hover {
+  color: #F18805;
+}
+
+.topbar__logobranco {
+  width: 20%;
+}
+
+.topbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  display: none;
+}
+
+@media (min-width: 1198px) {
+  .topbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+}
+
+.topbar__menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.topbar__menu-itens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 50px;
+}
+
+.logo {
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1198px) {
+  .logo {
+    width: 70%;
+  }
+}
+
+.background {
+  background-image: url(../img/maquina-costura.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  text-align: center;
+  top: 0;
+}
+
+@media (min-width: 1198px) {
+  .background {
+    height: 100vh;
+  }
+}
+
+.background-page2 {
+  background-image: url(../img/fita-metrica.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  top: 0;
+}
+
+.titulo {
+  color: #010202;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 14rem;
+}
+
+@media (min-width: 576px) {
+  .titulo {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .titulo {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1198px) {
+  .titulo {
+    margin-top: 12rem;
+  }
+}
+
+.titulo-page2 {
+  font-size: 1.8rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 55%;
+  border-bottom: 1px solid black;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  color: #B3BFB8;
+}
+
+.opcoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.opcoes-link {
+  text-decoration: none;
+}
+
+.opcoes-link-branco {
+  color: white;
+}
+
+.opcoes-link-preto {
+  color: black;
+}
+
+.crie-sua-camisa {
+  background-color: #353535;
+  width: 50%;
+  text-align: center;
+  padding: 38px;
+}
+
+@media (min-width: 768px) {
+  .crie-sua-camisa {
+    padding: 70px;
+  }
+}
+
+@media (min-width: 1198px) {
+  .crie-sua-camisa {
+    height: 30vh;
+    padding: 115px;
+  }
+}
+
+.agende-horario {
+  background-color: #F5F9E9;
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .agende-horario {
+    padding: 70px;
+  }
+}
+
+@media (min-width: 1198px) {
+  .agende-horario {
+    height: 30vh;
+    padding: 115px;
+  }
+}
+
+@media (min-width: 1198px) {
+  .wrapper-primaria {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .wrapper-secundaria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-home {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+.sobre {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F5F9E9;
+}
+
+.sobre-maschion-text {
+  padding: 27px;
+}
+
+.img-sobre {
+  width: 100%;
+  height: 35vh;
+}
+
+@media (min-width: 576px) {
+  .img-sobre {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-sobre {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1198px) {
+  .img-sobre {
+    width: 50%;
+    height: 60vh;
+  }
+}
+
+.formulario-contato {
+  background-color: rgba(222, 226, 211, 0.904);
+}
+
+.formulario-home {
+  width: 60%;
+  padding: 8px;
+}
+
+.formulario-titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #0e0d0d;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.form-contato-camisas {
+  width: 60%;
+}
+
+.form-bg {
+  resize: none;
+  background-color: #ecd083;
+  border: 1px solid #E5D7B0;
+  width: 100%;
+  height: 30px;
+  margin: 5px;
+}
+
+.text-form {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+#text-area {
+  height: 100px;
+}
+
+.submit {
+  background-color: #353541;
+  color: white;
+  border-style: none;
+  padding: 3px;
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.genero {
+  padding: 5px;
+}
+
+.modelo-camisa {
+  width: 90%;
+}
+
+@media (min-width: 1198px) {
+  .modelo-camisa {
+    width: 50%;
+  }
+}
+
+.modelo-camisa-genero {
+  width: 20%;
+}
+
+.form-camisa-titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.colarinhos, .vista, .punhos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.punho1, .punho2, .punho3 {
+  width: 60%;
+  height: 16vh;
+}
+
+@media (min-width: 576px) {
+  .punho1, .punho2, .punho3 {
+    width: 80%;
+    height: 30vh;
+  }
+}
+
+@media (min-width: 1198px) {
+  .punho1, .punho2, .punho3 {
+    width: 100%;
+    height: 25vh;
+  }
+}
+
+.colarinho1, .colarinho2, .colarinho3 {
+  width: 80%;
+  height: 15vh;
+}
+
+.vista1, .vista2, .vista3 {
+  width: 90%;
+}
+
+.camisa {
+  display: block;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 15px;
+}
+
+.bolso {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.monograma-img {
+  width: 80%;
+}
+
+@media (min-width: 1198px) {
+  .monograma-img {
+    width: 50%;
+  }
+}
+
+.monograma {
+  padding: 15px;
+  text-align: center;
+  background-color: #F3F3F3;
+}
+
+.tecidos-escolha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+}
+
+@media (min-width: 1198px) {
+  .tecidos-escolha {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.tecido {
+  width: 50%;
+}
+
+@media (min-width: 1198px) {
+  .tecido {
+    width: 20%;
+  }
+}
+
+.tecido-img {
+  width: 50%;
+}
+
+.valor {
+  resize: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#input-valor, #input-mono {
+  height: 22px;
+}
+
+.logo-footer {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+div.error {
+  color: rgba(255, 0, 0, 0.774);
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+input.error {
+  border-color: rgba(255, 0, 0, 0.548);
+}
+
+textarea.error {
+  border-color: rgba(255, 0, 0, 0.548);
+}
+
+footer {
+  background-color: #434743;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.footer-contato {
+  width: 60%;
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140%;
+}
+
+@media (min-width: 1198px) {
+  .footer-menu {
+    width: 50%;
+  }
+}
+
+.footer-bottom {
+  background-color: #353535;
+  display: block;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: rgba(180, 172, 172, 0.829);
+}
+
+@media (min-width: 576px) {
+  .footer__menu-link {
+    font-size: 1.1rem;
+  }
+}
+
+.footer__menu-item {
+  list-style: none;
+}
+
+.footer-bottom img {
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .logo-footer {
+    margin-left: 55px;
+  }
+  .footer-horarios {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1198px) {
+  .logo-footer {
+    width: 50%;
+    margin-left: 140px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

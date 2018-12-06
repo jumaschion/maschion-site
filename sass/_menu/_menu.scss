@@ -1,0 +1,62 @@
+
+
+.topbar__menu-link--borda{
+    border: 2px solid #B3BFB8;
+    border-radius: 8px 6px;
+    padding: 8px 15px;
+    color: #FFEBB0;
+}
+
+.topbar__menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 1.2rem;
+    padding: 25px;
+    color: #B3BFB8;
+    
+}
+
+.topbar-preta {
+    color: #000;
+}
+
+.topbar__menu-link:hover {
+    color: #F18805;
+}
+
+
+.topbar__logobranco {
+    width: 20%;
+}
+
+
+.topbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    display: none; 
+}
+
+@media (min-width: 1198px) {
+        
+    .topbar {
+        display: flex;
+        position: absolute;
+    }
+}
+
+.topbar__menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.topbar__menu-itens{
+    display: flex;
+    list-style: none;
+    margin: 50px;
+}
