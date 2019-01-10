@@ -21,7 +21,3 @@ function retornaPreco () {
 }
 
 
-
-// document.getElementById('tecido1').addEventListener('click', () => {
-//     valor.value = 'banana'
-// })
